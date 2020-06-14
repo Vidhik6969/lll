@@ -23,7 +23,7 @@ while r==0:
         c.execute("CREATE TABLE HEADPHONES(Model_Name char(30) Primary Key, Brand_Name char(30) not null, Wired_Or_Wireless char(10) not null, Colour char(20) not null, Mrp int not null, Play_Time int not null, Bluetooth char(30) not null, Packaging_Content char(50) not null)")
         c.execute("CREATE TABLE EARPHONES(Model_Name char(30) Primary Key, Brand_Name char(30) not null, Wired_Or_Wireless char(10) not null, Colour char(20) not null, Mrp int not null, Play_Time int not null, Bluetooth char(30) not null, Packaging_Content char(50) not null)")
         c.execute("CREATE TABLE FRIDGE(Model_Name char(30) Primary Key, Brand_Name char(30) not null, Mrp int not null, Number_Of_Door_Pocket int not null, Inverter_Campatibility char(50) not null, Convertable char(50) not null, Colour char(20) not null, Star_Rating int not null, Litres char(20) not null, Packaging_Content char(50) not null)")
-        c.execute("CREATE TABLE BOOKING(Name char(30) not null, E_Mail char(30) Primary Key, Model_Name char(20) not null)")
+        c.execute("CREATE TABLE BOOKING(Name char(30) not null, E_Mail char(30) Primary Key, Model_Name char(20) not null, Add char(50) not null, Pno int not null)")
         break
     except:
         break
